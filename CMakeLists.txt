@@ -23,3 +23,5 @@ target_compile_features(log4cpp INTERFACE cxx_std_11)
 if(${LOG4CPP_SUPPRESS_LOG_LOCATION})
     target_compile_definitions(log4cpp INTERFACE LOG4CPP_SUPPRESS_LOG_LOCATION)
 endif()
+
+install(FILES ${log4cpp_public_headers} DESTINATION include/log4cpp)
