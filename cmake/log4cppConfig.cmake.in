@@ -1,4 +1,4 @@
 @PACKAGE_INIT@
 
-include("${CMAKE_INSTALL_PREFIX}/lib/cmake/exe4cpp/exe4cppTargets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/log4cppTargets.cmake")
 check_required_components("@PROJECT_NAME@")
